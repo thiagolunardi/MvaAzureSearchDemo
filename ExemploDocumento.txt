@@ -1,0 +1,9 @@
+// Documento
+{
+    Id: "1234",
+    Title: "Titulo do Post",
+    Description: "Descrição do assunto",
+    Guid: "http://url_para_visualizacao_do_post/?id=1234",
+    Category: "Categoria",
+    Date: "2015-12-01"
+}
