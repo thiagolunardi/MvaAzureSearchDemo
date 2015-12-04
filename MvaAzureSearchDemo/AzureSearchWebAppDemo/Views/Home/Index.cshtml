@@ -1,0 +1,51 @@
+﻿<h2>Azure Search Service Demo</h2>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Text Search</div>
+    <div class="panel-body">
+        <form role="form" id="suggestForm">
+            <div class="input-group">
+                <input type="search" id="textSearch" class="form-control typeahead" placeholder="palavras chaves"/>
+                <span class="input-group-btn">
+                    <button type="button" id="btnBuscar" class="btn btn-default">Buscar</button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-9">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Resultado da Busca: <span id="TotalCount">0</span></div>
+            <div class="panel-body">
+                <table class="table" id="resultado">
+                    <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Categoria</th>
+                        <th>Data</th>
+                        <th>Score</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3" id="facets" style="display:none;">
+        <div class="panel panel-default">
+            <div class="panel-heading">Facets</div>
+            <div class="panel-body">
+                <div class="list-group" id="categorias"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.apiUrl = '@ViewBag.ApiUrl';
+</script>
